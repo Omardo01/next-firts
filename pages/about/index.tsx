@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,12 +22,6 @@ export default function About() {
             <code className={styles.code}>pages/index.tsx</code>
           </p>
           <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              rel="noopener noreferrer"
-            >
-              Home
-            </a>
           </div>
         </div>
 
@@ -37,7 +32,7 @@ export default function About() {
         </div>
 
         <div className={styles.grid}>
-          <a
+          <Link
             href="/"
             className={styles.card}
             rel="noopener noreferrer"
@@ -48,7 +43,7 @@ export default function About() {
             <p>
               Ir a la pagina Home
             </p>
-          </a>
+          </Link>
         </div>
       </main>
     </>
